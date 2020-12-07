@@ -1,0 +1,27 @@
+
+    <div class="container bg-secondary p-2" id="chat">
+        <h1 class="display-3">Chat Room</h1>
+        <p class="lead"> <%= room %></p>
+        <hr class="my-4">
+        <div class="container p-0">
+            <div class="row mb-1 mx-0">
+                <div id="video-chat-container" class="p-0 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <video id="local-video" autoplay="autoplay" class="video p-0 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"></video>
+                    <video id="remote-video" autoplay="autoplay" class="video p-0 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"></video>
+                </div>
+                <div id="chat-box" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <ul class="list-group" id="events">
+                    </ul>            
+                </div>
+            </div>
+        </div>
+        <div class="row m-0">
+            <form class="form-inline form-message col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <input type="text" class="form-control w-75" aria-label="add text" aria-describedby="text message" id="text-message">
+                <button class="btn btn-primary w-25" id="send-message" type="submit">send</button>
+            </form>
+        </div>
+    </div>
+    <script>const room = '<%=room%>'</script>
+    <script src="/javascripts/client.js"></script>
+    

@@ -1,0 +1,26 @@
+<div class="jumbotron jumbotron-fluid p-4">
+    <h1 class="display-4"><%= title %></h1>
+    <p class="lead">Pick a chat room</p>
+    <hr class="my-4">
+    <form>
+        <div class="row mb-4">
+            <div class="col-4">
+                <input type="text" class="form-control" size="40" aria-label="add text" aria-describedby="Room number" 
+                    id="room-number" placeholder="Enter room ID here">
+            </div>
+            <button class="btn btn-outline-secondary " id="join-room" type="submit">join</button>
+        </div>    
+    </form>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="new" role="button">new room</a>
+    </p>
+</div>
+
+<script>
+    $("#join-room").click(function(event){
+        event.preventDefault();
+        const id = ($("#room-number").val()).trim();
+        $("#join-room").val("");
+        window.location.href = '/'+id;
+    });
+</script>

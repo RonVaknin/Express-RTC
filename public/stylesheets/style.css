@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+}
+a {
+  color: #00B7FF;
+}
+
+
+#chat-box {
+  height: 60vh;
+  width: 45%;
+  overflow:auto;
+  display: flex;
+  background-color: white;
+}
+
+#chat-input {
+  width: 100%;
+  overflow:auto;
+  background-color: white;
+}
+#text-message{
+  width: calc(80% - 60px);
+}
+
+#chat-box-list {
+  height: calc(100% - 25px);
+  overflow:auto;
+  display: flex;
+}
+
+.video {
+  width: calc(50% - 4px);
+
+  object-fit:contain;
+}
