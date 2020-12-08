@@ -42,12 +42,13 @@ Simply run `npm start` to start the server
 * [Uuid] (https://www.npmjs.com/package/uuid)  
 * npm including libraries listed on 'package.json'
 ### STUN servers
-`// Free public STUN servers provided by Google.
-const iceServers = {
-iceServers: [
-    { urls: 'stun:stun.l.google.com:19302' },
-    { urls: 'stun:stun1.l.google.com:19302' },
-],`
+```// Free public STUN servers provided by Google.  
+const iceServers = {  
+ iceServers: [  
+   { urls: 'stun:stun.l.google.com:19302' },  
+   { urls: 'stun:stun1.l.google.com:19302' },  
+ ],
+ ```
 located at `Express-RTC\public\javascripts\client.js`
 
 
